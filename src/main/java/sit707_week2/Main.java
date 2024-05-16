@@ -10,7 +10,7 @@ public class Main
 {
     public static void main( String[] args ) throws IOException
     {
-        //SeleniumOperations.officeworks_registration_page("https://www.officeworks.com.au/app/identity/create-account");
-        SeleniumOperations.digitalocean_registration_page("https://cloud.digitalocean.com/registrations/email");
+        SeleniumOperations.officeworks_registration_page("https://www.officeworks.com.au/app/identity/create-account");
+        //SeleniumOperations.digitalocean_registration_page("https://cloud.digitalocean.com/registrations/email");
     }
 }

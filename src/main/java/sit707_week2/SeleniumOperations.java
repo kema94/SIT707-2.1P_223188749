@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * This class demonstrates Selenium locator APIs to identify HTML elements.
@@ -32,18 +33,18 @@ public class SeleniumOperations {
 	
 	
 	public static void officeworks_registration_page(String url) throws IOException {
-		// Step 1: Locate chrome driver folder in the local drive.
-		System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver-win64\\chromedriver.exe");
+		// Step 1: Locate gecko driver folder in the local drive.
+		System.setProperty("webdriver.gecko.driver", "C:\\Windows\\geckodriver-v0.34.0-win64\\geckodriver.exe");
 		
-		// Step 2: Use above chrome driver to open up a chromium browser.
+		// Step 2: Use above gecko driver to open up a firefox browser.
 		System.out.println("Fire up chrome browser.");
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		System.out.println("Driver info: " + driver);
 		
 		sleep(2);
 	
-		// Load a webpage in chromium browser.
+		// Load a webpage in firefor browser.
 		driver.get(url);
 		
 		sleep(2);
@@ -116,7 +117,7 @@ public class SeleniumOperations {
 		// Sleep a while
 		sleep(200);
 		
-		// close chrome driver
+		// close firefox driver
 		driver.close();	
 	}
 	
